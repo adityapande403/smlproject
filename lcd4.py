@@ -58,8 +58,8 @@ if st.button("Predict Health Diagnosis"):
  inputs_array = np.array(list(inputs.values())[1:], dtype=bool)
  prediction = predict(inputs_array)
 if prediction == 0:
- st.error("You have a low risk of developing lung cancer")
+  st.write("You have a low risk of developing lung cancer")
 else:
- st.warning("You have a high risk of developing lung cancer")
+  st.write("You have a high risk of developing lung cancer")
 st.write("Inputs:")
 st.write(inputs)
