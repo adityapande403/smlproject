@@ -10,7 +10,7 @@ def normalize_option(option):
  return option.lower() in ['yes', 'true', '1', 'y']
 
 def predict(data):
- loaded_model = joblib.load('/Users/User/Downloads/Trained_model.sav')
+ loaded_model = joblib.load('Trained_model.sav')
  prediction = loaded_model.predict(data.reshape(1, -1))
  return prediction[0]
 
