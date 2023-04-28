@@ -14,7 +14,7 @@ def normalize_option(option):
 def predict(data):
  loaded_model = joblib.load('/Users/User/Downloads/Trained_model.sav')
  prediction = loaded_model.predict(data.reshape(1, -1))
- return prediction[0]
+ return prediction[1]
 
 st.title("Lung Cancer Risk Assessment")
 
