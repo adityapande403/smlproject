@@ -8,7 +8,7 @@ import numpy as np
 url = 'https://github.com/adityapande403/smlproject/blob/58662b0b10d9891d708968f6cb1de8e7605263f3/Trained_model.sav'
 filename = 'Trained_model.sav'
  
-
+prediction = -1 
 def normalize_option(option):
  return option.lower() in ['yes', 'true', '1', 'y']
 def predict(data):
