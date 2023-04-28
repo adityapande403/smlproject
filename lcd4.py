@@ -56,7 +56,7 @@ inputs = {
 
 if st.button("Predict Health Diagnosis"):
  inputs_array = np.array(list(inputs.values())[1:], dtype=bool)
-  return prediction = predict(inputs_array)
+ return prediction = predict(inputs_array)
 if prediction == 0:
   st.write("You have a low risk of developing lung cancer")
 else:
