@@ -10,9 +10,9 @@ def normalize_option(option):
  return option.lower() in ['yes', 'true', '1', 'y']
 
 def predict(data):
-url = 'https://github.com/adityapande403/smlproject/blob/58662b0b10d9891d708968f6cb1de8e7605263f3/Trained_model.sav'
-filename = 'Trained_model.sav'
-wget.download(url, filename)
+ url = 'https://github.com/adityapande403/smlproject/blob/58662b0b10d9891d708968f6cb1de8e7605263f3/Trained_model.sav'
+ filename = 'Trained_model.sav'
+ wget.download(url, filename)
 
 loaded_model = pickle.load(open(filename, 'rb'))
  prediction = loaded_model.predict(data.reshape(1, -1))
