@@ -14,7 +14,7 @@ def normalize_option(option):
 def predict(data):
  loaded_model = joblib.load('/Users/User/Downloads/Trained_model.sav')
  prediction = loaded_model.predict(data.reshape(1, -1))
- return prediction[1]
+ return prediction[0]
 
 st.title("Lung Cancer Risk Assessment")
 
@@ -56,7 +56,7 @@ inputs = {
 
 if st.button("Predict Health Diagnosis"):
  inputs_array = np.array(list(inputs.values())[1:], dtype=bool)
- prediction = predict(inputs_array)
+  return prediction = predict(inputs_array)
 if prediction == 0:
   st.write("You have a low risk of developing lung cancer")
 else:
