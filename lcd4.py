@@ -5,6 +5,7 @@ import os
 import pickle
 import joblib
 import numpy as np
+import wget
 url = 'https://github.com/adityapande403/smlproject/blob/58662b0b10d9891d708968f6cb1de8e7605263f3/Trained_model.sav'
 filename = 'Trained_model.sav'
  
