@@ -1,2 +1,3 @@
 Streamlit == 1.21.0
 Joblib == 1.1.0
+wget
